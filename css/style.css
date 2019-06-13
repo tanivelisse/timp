@@ -103,3 +103,18 @@ footer{
 	margin-top: 30px;
 	text-align: center;
 }
+
+
+@media (orientation: portrait) {
+	.project-box {
+	width: 100%;
+	}
+	h2 {
+		font-size: 40pt;
+	}
+	#header-nav {
+		font-size: 40pt;
+	}
+
+
+}
