@@ -1,7 +1,7 @@
 body {
 	font-family: 'Raleway', sans-serif;
 	color: black;
-	font-size: 16pt;
+	font-size: 18pt;
 }
 
 h1 {
@@ -70,6 +70,7 @@ a:hover {text-decoration: underline;}   /* mouse over link */
 	justify-content: space-around;
 	flex-wrap: wrap;
 	background: #F3CCD8;
+	margin: 15px;
 
 }
 
