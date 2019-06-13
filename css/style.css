@@ -89,13 +89,13 @@ ul {
 }
 
 #contact-info {
-	max-width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	border-radius: 20px;
+	border-radius: 10px;
 	box-shadow: 1px 5px 5px 1px gray;
 	margin: 10px 20px;
+	padding: 10px;
 }
 
 footer{
