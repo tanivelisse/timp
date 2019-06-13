@@ -111,6 +111,11 @@ ul {
 	color: white;
 }
 
+#follow-button-box {
+	display: flex;
+	flex-direction: row;
+}
+
 footer{
 	margin-top: 30px;
 	text-align: center;
