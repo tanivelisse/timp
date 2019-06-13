@@ -115,6 +115,8 @@ footer{
 	#header-nav {
 		font-size: 40pt;
 	}
-
-
+	#contact-info{
+		display: flex;
+		flex-direction: column;
+	}
 }
