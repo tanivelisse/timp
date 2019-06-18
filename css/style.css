@@ -10,13 +10,12 @@ h1 {
 	margin: 0;
 }
 
-
-
+i {
+	color: white;
+}
 
 header{
-	background: #F3CCD8/*rgba(255, 220, 234,.7)*/;
-	/*box-shadow: 0 5px 5px gray;*/
-	/*border-radius: 20px;*/
+	background: #F3CCD8;
 	padding: 40px 10px 5px;
 	margin: 16px;
 	text-align: center;
@@ -25,10 +24,12 @@ header{
 }
 
 #header-nav {
+	background: white;
 	font-family: 'Raleway', sans-serif;
-	padding: 20px;
-	text-align: center;
 	font-size: 20pt;
+	text-align: center;
+	padding: 20px;
+	width: 100%:;
 }
 
 a {
@@ -105,7 +106,7 @@ ul {
 	/*border-radius: 10px;*/
 	/*box-shadow: 1px 5px 5px 1px gray;*/
 	margin: 10px 15px;
-	padding: 10px 0;
+	padding: 30px 0;
 	text-align: center;
 	background: #BFB5B8;
 	color: white;
