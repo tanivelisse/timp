@@ -49,6 +49,7 @@ a:hover {text-decoration: underline;}   /* mouse over link */
 	/*border-radius: 20px;*/
 	background: #BFB5B8;
 	margin: 16px;
+	padding: 20px;
 	display: flex;
 	flex-direction: row;
 	color: white;
@@ -58,7 +59,8 @@ a:hover {text-decoration: underline;}   /* mouse over link */
 #developer-img {
 	border-radius:200px;
 	box-shadow: 0 5px 5px black;
-	margin: 20px;
+	margin: 30px 20px 20px;
+
 }
 
 #about-text {
@@ -118,7 +120,10 @@ ul {
 }
 
 footer{
-	margin-top: 30px;
+	margin-top: 100px;
+	font-family: Droid;
+	font-size: 14pt;
+	color: gray;
 	text-align: center;
 }
 
@@ -175,6 +180,10 @@ footer{
 		padding-top: 100px;
 	}
 
+	#follow-button-box {
+		align-self: center;
+	}
+
 	#project-img-div{
 		background: #F3CCD8;
 		padding: 80px;
@@ -183,6 +192,11 @@ footer{
 	.projects-img{
 		max-height: 500px;
 	}
+
+	.project-box i {
+		color: black;
+	}
+
 	hr {
 		display: none;
 	}
