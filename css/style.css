@@ -45,7 +45,7 @@ a:hover {text-decoration: underline;}   /* mouse over link */
 	text-align: center;
 }
 
-.main-boxes {
+.about {
 	/*border-radius: 20px;*/
 	background: #BFB5B8;
 	margin: 16px;
@@ -129,7 +129,7 @@ footer{
 
 
 @media (orientation: portrait) {
-	.main-boxes {
+	.about {
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
