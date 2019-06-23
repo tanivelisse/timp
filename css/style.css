@@ -5,7 +5,6 @@ body {
 }
 
 h1 {
-	/*text-shadow: 2px 2px 2px white;*/
 	font-size: 80px;
 	margin: 0;
 }
@@ -17,7 +16,7 @@ i {
 header{
 	background: #F3CCD8;
 	padding: 40px 10px 5px;
-	margin: 16px;
+	margin: /*80px 16px*/ 16px;
 	text-align: center;
 	font-family: 'Poiret One', cursive;
 	color: white;
@@ -29,7 +28,10 @@ header{
 	font-size: 20pt;
 	text-align: center;
 	padding: 20px;
-	width: 100%:;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 a {
@@ -45,17 +47,15 @@ a:hover {text-decoration: underline;}   /* mouse over link */
 	text-align: center;
 }
 
-.about {
-	/*border-radius: 20px;*/
+#about {
 	background: #BFB5B8;
 	margin: 16px;
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
 	color: white;
-	/*box-shadow: 1px 5px 5px 1px gray;*/
-
 }
+
 #developer-img {
 	border-radius:200px;
 	box-shadow: 0 5px 5px black;
@@ -83,8 +83,6 @@ a:hover {text-decoration: underline;}   /* mouse over link */
 	margin: 10px 0;
 	text-align: center;
 	color: white;
-	/*border-radius: 20px;*/
-	/*box-shadow: 0px 0px 5px 0px gray;*/*/
 }
 
 .projects-img{
@@ -105,8 +103,6 @@ ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	/*border-radius: 10px;*/
-	/*box-shadow: 1px 5px 5px 1px gray;*/
 	margin: 10px 15px;
 	padding: 30px 0;
 	text-align: center;
@@ -129,23 +125,26 @@ footer{
 
 
 @media (orientation: portrait) {
-	.about {
+	#about {
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 	}
+
 	#developer-img{
 		margin-top: 20px;
 		align-items: center;
 		border-radius: 300px;
 		height: 500px;
 	}
+
 	#about-text {
 		padding:0 5px 10px;
 		font-size: 30pt;
 	}
+
 	.projects-box {
 		margin-top: 0px;
 	}
@@ -182,6 +181,7 @@ footer{
 
 	#follow-button-box {
 		align-self: center;
+		font-size: 38pt;
 	}
 
 	#project-img-div{
@@ -189,6 +189,7 @@ footer{
 		padding: 80px;
 
 	}
+
 	.projects-img{
 		max-height: 500px;
 	}
@@ -200,6 +201,7 @@ footer{
 	hr {
 		display: none;
 	}
+
 	footer{
 		padding: 50px 50px 10px;
 		font-size: 20pt;
