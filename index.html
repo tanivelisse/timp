@@ -9,20 +9,25 @@
 	</title>
 </head>
 <body>
-	<header>
-		<div id="name">
-			<h1>Tania I Medina Pereira</h1>
-			<h2>Web Developer</h2>
+	<header id="home" class="header">
+		<div class="header-primary-text-box">
+			<h1 class="header-primary-text">
+			<span class="header-primary-main">Tania I Medina Pereira</span>
+			<span class="header-primary-sub">Software Developer</span>
+			</h1>
 		</div>
 	</header>
 	<nav id="header-nav">
-		<a href="#about">About</a>|
-		<a href="#Web-Projects">Web Projects</a>|
+		<a href="#home">Home</a>
+		<a href="#about-box">About</a>
+		<a href="#Web-Projects">Web Projects</a>
 		<a href="#Contact-Me">Contact</a>
 	</nav>
 	<main>
-		<div id="about">
+		<div id="about"></div>
+		<section id="about-box">
 			<div id="about-text">
+				<h2>About</h2>
 				<p>From the Jet-life to the Dev-life. Former world traveling Flight Attendant pursuing a career as a Software Engineer. I decided to switch careers because I strongly believe you need to be the change you want to see in the world and I think this world needs more women engineers. My passion for learning, communicating and helping others make me a creative problem solver. Already fluent in Spanish, English, French and Portuguese, currently working on Javascript to be my 5th mastered language. 
 				</p>
 
@@ -30,14 +35,14 @@
 				HTML5 | CSS3 | JavaScript | Git | Mongo | SQL | Node.js | React | Express | Ruby | Sinatra
 
 				<br><br>
-
+				<div>
 				Resume: 
 					<a href="https://docs.google.com/document/d/1QUhLdZqsgR5xbf6iyDksys92HwwT37psYoDA06kai-Q/edit?usp=sharing" target="_blank">
 						<i class="far fa-file"></i>
 					</a>
-
-				<br><br>
-
+				</div>
+				<br>
+				<div>
 				Follow me:
 
 					<a href="https://github.com/tanivelisse" target="_blank">
@@ -46,25 +51,25 @@
 					<a href="https://www.linkedin.com/in/tanivelisse" target="_blank">
 						<i class="fab fa-linkedin"></i>
 					</a>
-					
-			</div>
+				</div>
+				</div>
 
 			<div id="developer-img-box">
 				<img id="developer-img" src="https://i.imgur.com/iySuNFi.jpg?1" alt="Tania's profile picture">
 			</div>
-		</div>
+		</section>
 
-		<div class="titles">
-			<h2 id="Web-Projects">Web Projects</h2>
-		</div>
-
-		<div class="projects-box">
+		<div id="Web-Projects"></div>
+		<section class="projects-section">
+			<h2 class="Web-Projects-title">Web Projects</h2>
+			<div class="projects-container">
 			<div class="project-box">
 				<div id="project-img-div">
-					<a href="https://inpirada.herokuapp.com/" target="_blank">
+					<a href="https://inspirada.herokuapp.com/" target="_blank">
 					<img class="projects-img" src="images/inspirAda.png">
 					</a>
 				</div>
+
 				<ul>
 					<li>
 						InspirAda
@@ -78,7 +83,7 @@
 						</p>
 					</li>
 					<li>
-						Technology: JS | React | Ruby | Sinatra | SQL | CSS3 | 
+						Technology: JS | React | Ruby | Sinatra | SQL | CSS3 
 					</li>
 					
 				</ul>
@@ -156,23 +161,18 @@
 					</li>
 				</ul>
 			</div> 
-		</div>
-	<div class="titles">
-		<h2 id="Contact-Me"> Let's get in touch! </h2>
-	</div>
-	<div id="contact-info">
-			<div>
-				<a href="mailto:tanivelisse@gmail.com?subject=Hello Tania!" target="_blank">
-					<i class="fas fa-paper-plane"></i>
-				</a>tanivelisse@gmail.com
 			</div>
-			<div id="follow-button-box">
-				Follow me:
-					<a href="https://github.com/tanivelisse" target="_blank">
-						<i class="fab fa-github"></i>
-					</a>
+		</section>
+	<div id="Contact-Me"></div>
+	<div id="contact-info">
+		<h2 class="contact-me">Lets get in touch!</h2>
+			<div class="email-linkedin">
+				<a href="mailto:tanivelisse@gmail.com?subject=Hello Tania!" target="_blank">
+					<i class="fas fa-envelope"></i>
+					<p>tanivelisse@gmail.com<p>
+				</a>
 					<a href="https://www.linkedin.com/in/tanivelisse" target="_blank">
-						<i class="fab fa-linkedin"></i>
+						<i class="fab fa-linkedin fa-linkedin2"></i>
 					</a>
 			</div>
 	

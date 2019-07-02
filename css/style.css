@@ -1,25 +1,102 @@
-body {
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	font-size: 18pt;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-h1 {
-	font-size: 80px;
-	margin: 0;
+body {
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-size: 18pt;
+	position: relative;
 }
+
 
 i {
 	color: white;
 }
 
-header{
-	background: #F3CCD8;
-	padding: 40px 10px 5px;
-	margin: /*80px 16px*/ 16px;
+.header{
+	height: 98vh;
+	background-image: linear-gradient(
+		to right bottom, 
+		rgba(231,70,119, 0.9),
+		rgba(243,204,216,0.9)),
+	url(https://i.imgur.com/Id7uOHD.jpg);
+	background-size: cover;
+	background-position: bottom;
+	margin: 16px;
 	text-align: center;
-	font-family: 'Poiret One', cursive;
 	color: white;
+	position: relative;
+}
+
+.header-primary-text-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.header-primary-text {
+	font-family: 'Poiret One';
+	color: #fff;
+	backface-visibility: hidden;
+}
+
+.header-primary-main {
+	display: block;
+	font-size: 60px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	animation-name: moveInLeft;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+
+.header-primary-sub {
+	display: block;
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	animation-name: moveInRight;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	80%{
+		transform: translateX(-2px);
+
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translate(100px);
+	}
+
+	80%{
+		transform: translateX(-2px);
+
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 #header-nav {
@@ -27,68 +104,88 @@ header{
 	font-family: 'Raleway', sans-serif;
 	font-size: 20pt;
 	text-align: center;
-	padding: 20px;
+	padding: 10px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
+	position: fixed;
+	top: 0px;
 }
 
 a {
 	text-decoration: none;
 	padding: 5px;
 }
-a:link {color:black;}    /* unvisited link */
-a:visited {color:black;} /* visited link */
+a:link {color:rgba(231,70,119, 0.9);}    /* unvisited link */
+a:visited {color:rgba(231,70,119, 0.9);} /* visited link */
 a:hover {text-decoration: underline;}   /* mouse over link */
 
 .titles {
 	font-family: 'Poiret One', cursive;
+	color: white;
 	text-align: center;
 }
 
-#about {
-	background: #BFB5B8;
+#about-box {
+	height: 98vh;
+	background: linear-gradient(
+		to left bottom, 
+		rgba(231,70,119, 0.9),
+		rgba(243,204,216,0.9));
 	margin: 16px;
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	color: white;
 }
 
 #developer-img {
 	border-radius:200px;
-	box-shadow: 0 5px 5px black;
 	margin: 30px 20px 20px;
 
 }
 
 #about-text {
-	padding: 50px 10px;
+	padding:10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
-.projects-box {
+.projects-section {
+	background: linear-gradient(
+		to right bottom, 
+		rgba(231,70,119, 0.9),
+		rgba(243,204,216,0.9));
+	margin: 16px;
+	text-align: center;
+}
+
+.projects-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	background: #F3CCD8;
-	margin: 15px;
-
+	padding: 61px 0;
 }
 
 .project-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content:space-around;
 	width: 46%;
 	padding: 50px 10px;
-	margin: 10px 0;
 	text-align: center;
 	color: white;
 }
 
 .projects-img{
-	box-shadow: 1px 5px 5px 1px gray;
-	max-width: 100%;
 	max-height: 300px;
+	max-width: 100%;
 }
 
 .project-links{
@@ -99,33 +196,85 @@ ul {
 	list-style: none;
 }
 
+li {
+	padding:5px;
+}
+
+
 #contact-info {
+	background: linear-gradient(
+		to left bottom, 
+		rgba(231,70,119, 0.9),
+		rgba(243,204,216,0.9));
+	height: 80vh;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-around;
 	margin: 10px 15px;
 	padding: 30px 0;
 	text-align: center;
-	background: #BFB5B8;
+	color: white;
+}
+
+.email-linkedin{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+
+}
+
+.email-linkedin a {
 	color: white;
 }
 
 #follow-button-box {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+}
+
+.fa-envelope {
+	font-size: 200px;
+}
+
+.fa-linkedin2 {
+	font-size: 200px;
 }
 
 footer{
-	margin-top: 100px;
 	font-family: Droid;
 	font-size: 14pt;
 	color: gray;
 	text-align: center;
+	padding:30px 0 40px;
 }
 
 
 @media (orientation: portrait) {
-	#about {
+	h2{
+		font-size: 60px;
+	}
+	.header{
+		height: 99vh;
+	}
+
+	.header-primary-main{
+		font-size: 200px;
+		font-weight: 400;
+	}
+
+	.header-primary-sub {
+		font-size: 90px;
+		font-weight: 400;
+	}
+
+	#header-nav {
+		font-size: 40pt;
+	}
+
+	#about-box {
+		height: 99vh;
 		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
@@ -144,59 +293,48 @@ footer{
 		padding:0 5px 10px;
 		font-size: 30pt;
 	}
-
-	.projects-box {
+	.Web-Projects-title {
+		padding-top: 150px;
+	}
+	.projects-container {
 		margin-top: 0px;
+		padding-top: 0px;
 	}
 
 	.project-box {
+		height: 80vh;
 		width: 100%;
-		background: white;
-		color: black;
-		font-size: 30pt;
-		/*border-bottom: 1px solid gray;*/
-		margin: 0px;
-		padding: 0px;
+		color: white;
+		font-size: 35pt;
+		
 	}
 
-	h2 {
-		font-size: 50pt;
-		/*margin-bottom: 0px;*/
+	.projects-img{
+		max-height: 600px;
 	}
 
-	#header-nav {
-		font-size: 40pt;
+	li {
+	padding:10px;
 	}
+
 
 	#contact-info{
+		height: 90vh;
 		display: flex;
+		justify-content: center;
 		flex-direction: column;
 		font-size: 30pt;
 	}
 
-	#Contact-Me {
-		border-top: 1px solid gray;
-		padding-top: 100px;
-	}
-
-	#follow-button-box {
-		align-self: center;
-		font-size: 38pt;
-	}
-
-	#project-img-div{
-		background: #F3CCD8;
-		padding: 80px;
+	.email-linkedin{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	align-content: center;
+	margin-top: 200px;
 
 	}
 
-	.projects-img{
-		max-height: 500px;
-	}
-
-	.project-box i {
-		color: black;
-	}
 
 	hr {
 		display: none;
@@ -204,6 +342,6 @@ footer{
 
 	footer{
 		padding: 50px 50px 10px;
-		font-size: 20pt;
+		font-size: 40px;
 	}
 }
