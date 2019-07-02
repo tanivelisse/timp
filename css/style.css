@@ -155,6 +155,10 @@ a:hover {text-decoration: underline;}   /* mouse over link */
 	justify-content: space-around;
 }
 
+.Web-Projects-title {
+		padding-top: 100px;
+	}
+
 .projects-section {
 	background: linear-gradient(
 		to right bottom, 
