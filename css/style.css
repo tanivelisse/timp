@@ -153,15 +153,10 @@ a:hover {text-decoration: underline;}   /* mouse over link */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	font-size: 25px;
 }
 
-.resume-link-box{
-	font-size: 60px;
-}
 
-.follow-links-box{
-	font-size: 60px;
-}
 
 .Web-Projects-title {
 		padding-top: 100px;
@@ -264,6 +259,10 @@ footer{
 
 
 @media (orientation: portrait) {
+	body {
+		font-size: 30px;
+	}
+
 	h2{
 		font-size: 60px;
 	}
@@ -298,13 +297,22 @@ footer{
 		margin-top: 20px;
 		align-items: center;
 		border-radius: 300px;
-		height: 500px;
+		height: 300px;
 	}
 
 	#about-text {
 		padding:0 5px 10px;
-		font-size: 30pt;
+		font-size: 45px;
 	}
+
+	.resume-link-box{
+		font-size: 60px;
+	}
+
+	.follow-links-box{
+		font-size: 60px;
+	}
+
 	.Web-Projects-title {
 		padding-top: 150px;
 	}
