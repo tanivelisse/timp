@@ -141,6 +141,7 @@ a:hover {text-decoration: underline;}   /* mouse over link */
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	/*flex-wrap: wrap;*/
 	color: white;
 }
 
@@ -150,7 +151,9 @@ a:hover {text-decoration: underline;}   /* mouse over link */
 	}
 
 #developer-img {
-	border-radius:200px;
+	border-radius:300px;
+	height: 400px;
+	text-align: center;
 }
 
 #about-text {
