@@ -181,6 +181,7 @@ a:hover {text-decoration: underline;}   /* mouse over link */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	padding: 61px 0;
 }
